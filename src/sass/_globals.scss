@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    color: $primary_font_color;
+    background-color: $light;
+  }
+
+  header {
+    height: 100px;
+    padding: 1em;
+  }
+
+  
+  code {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+  }
+
+  a {
+    color: $primary;
+    text-decoration: none;
+    &:hover {
+      color: $complimentary;
+    }
+  }
+
+  .btn {
+    background-color: $light;
+    color: $primary;
+    border: 1px solid $primary;
+    padding: 10px 15px;
+    border-radius: 4px;
+    min-width: 80px;
+    font-weight: bold;
+    margin: 5px;
+    &:hover {
+      background-color: $primary;
+        color: $light;
+    }
+    &:active {
+      background-color: $secondary;
+        color: $light;
+        border: 1px solid $secondary;
+    }
+    &.btn-secondary {
+        background-color: $light;
+        color: $dark;
+        border: 1px solid $dark;
+        &:hover {
+            background-color: $dark;
+            color: $light;
+        }
+    }
+  }
+
+  .error {
+    background-color: $danger;
+    color: $light;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 5px 0;
+    border: 1px solid #ff0000;
+    font-weight: bold;
+  }
+  
+  .box {
+    width: 80px;
+    height: 90px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 2em;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    transistion: background-color 0.2s ease-in-out;
+    color: $light;
+  }

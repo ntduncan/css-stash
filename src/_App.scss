@@ -1,0 +1,10 @@
+@import "./sass/variables";
+
+.App {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 1em;
+  height: 90vh;
+}
+
+

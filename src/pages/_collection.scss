@@ -1,0 +1,27 @@
+@import "../sass/variables";
+
+.collection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: fit-content;
+    padding: 0;
+    & > .collection-item {
+        margin: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+    }
+    & > .collection-item:active > .box {
+       border: 2px solid $dark;
+    }
+    & > .collection-item > .box {
+        margin: 0;
+        
+    }
+}

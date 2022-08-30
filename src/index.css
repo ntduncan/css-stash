@@ -1,13 +1,137 @@
+.collection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: fit-content;
+  padding: 0;
+}
+.collection > .collection-item {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+}
+.collection > .collection-item:active > .box {
+  border: 2px solid #555;
+}
+.collection > .collection-item > .box {
+  margin: 0;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 1em;
+  height: 90vh;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #324759;
+  background-color: #fefefe;
+}
+
+header {
+  height: 100px;
+  padding: 1em;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
+
+a {
+  color: #41B983;
+  text-decoration: none;
+}
+a:hover {
+  color: #B94177;
+}
+
+.btn {
+  background-color: #fefefe;
+  color: #41B983;
+  border: 1px solid #41B983;
+  padding: 10px 15px;
+  border-radius: 4px;
+  min-width: 80px;
+  font-weight: bold;
+  margin: 5px;
+}
+.btn:hover {
+  background-color: #41B983;
+  color: #fefefe;
+}
+.btn:active {
+  background-color: #64c99c;
+  color: #fefefe;
+  border: 1px solid #64c99c;
+}
+.btn.btn-secondary {
+  background-color: #fefefe;
+  color: #555;
+  border: 1px solid #555;
+}
+.btn.btn-secondary:hover {
+  background-color: #555;
+  color: #fefefe;
+}
+
+.error {
+  background-color: #ff6565;
+  color: #fefefe;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 5px 0;
+  border: 1px solid #ff0000;
+  font-weight: bold;
+}
+
+.box {
+  width: 80px;
+  height: 90px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 2em;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+  transistion: background-color 0.2s ease-in-out;
+  color: #fefefe;
+}
+
+.input-form {
+  padding: 1em;
+  height: 100%;
+  border-right: 2px solid #324759;
+}
+.input-form > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-form > form > input {
+  width: 90%;
+  border: 1px solid #324759;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.input-form > form > input:focus {
+  outline: none;
+}
+.input-form > form > button {
+  width: 100%;
+}
+
+/*# sourceMappingURL=index.css.map */

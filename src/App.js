@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import addIcon from "./assets/icons/add-icon.svg";
+import InputForm from "./components/InputForm";
+import Collection from "./pages/Collection";
 
-function App() {
+function App({ collection }) {
+  const [showForm, setShowForm] = useState(false);
+
+  const toggleShowForm = () => {
+    setShowForm(!showForm);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="app-left">
+        {!showForm && <img src={addIcon} alt="Add" onClick={toggleShowForm} />}
+        {showForm && (
+          <InputForm toggleShowForm={toggleShowForm} collection={collection} />
+        )}
+      </div>
+      <div className="app-right">
+        <header>
+          <h1>CSS Stash</h1>
+        </header>
+        <Collection collection={collection} />
+      </div>
     </div>
   );
 }

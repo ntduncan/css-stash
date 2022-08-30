@@ -1,0 +1,23 @@
+.input-form {
+    padding: 1em;
+    height: 100%;
+    border-right: 2px solid $primary_font_color;
+    & > form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    & > form > input {
+        width: 90%;
+        border: 1px solid $primary_font_color;
+        border-radius: 4px;
+        padding: 10px;
+        margin-bottom: 10px;
+        &:focus {
+            outline: none;
+        }
+    }
+    & > form > button {
+        width: 100%;
+    }
+}
