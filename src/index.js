@@ -8,7 +8,7 @@ const collections = {
   color: {
     collectionName: 'color',
     placeholder: '#000000',
-    regexPattern: '^#?([a-f0-9]{6}|[a-f0-9]{3})$',
+    regexPattern: '^#?([a-f0-9A-F]{6}|[a-f0-9]{3})$',
     validatonMessage: 'Please enter a valid hex color',
     box: (name, content) => (<div className="box" style={{backgroundColor: `${name}`}}>{content}</div>)
   },
