@@ -1,11 +1,13 @@
 .input-form {
     padding: 1em;
     height: 100%;
+    margin-top: 2em;
     border-right: 2px solid $primary_font_color;
     & > form {
         display: flex;
         flex-direction: column;
         align-items: center;
+        
     }
     & > form > input {
         width: 90%;
@@ -19,5 +21,8 @@
     }
     & > form > button {
         width: 100%;
+    }
+    & > form > .sample-box {
+        margin: 2em;
     }
 }

@@ -1,0 +1,43 @@
+.notification-banner {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 4px;
+    margin-bottom: 1em;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 10px 1fr;
+    & > .banner-message {
+        padding: 1em;
+    }
+    &.success {
+        background-color: #d3ecc9;
+        color: #3c763d;
+        & > .banner-header {
+            background-color: #3c763d;
+            width: 10px;
+        }
+    }
+    &.error {
+        background-color: #f2dede;
+        color: #a94442;
+        & > .banner-header {
+            background-color: #a94442;
+            width: 10px;
+        }
+    }
+    &.info {
+        background-color: #d9edf7;
+        color: #31708f;
+        & > .banner-header {
+            background-color: #31708f;
+            width: 10px;
+        }
+    }
+    &.warning {
+        background-color: #fcf8e3;
+        color: #8a6d3b;
+        & > .banner-header {
+            background-color: #8a6d3b;
+            width: 10px;
+        }
+    }
+}
