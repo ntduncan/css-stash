@@ -3,7 +3,7 @@ import { useCollection } from "../hooks/useCollection";
 import NotificationBanner from "../components/NotificationBanner";
 
 export default function Collection({ collection }) {
-  const { documents, error } = useCollection("color");
+  const { documents, error } = useCollection(collection.collectionName);
   const [showBanner, setShowBanner] = useState(false);
 
   const copyToClipboard = (value) => {

@@ -29,6 +29,17 @@
   height: 90vh;
 }
 
+.collection-selector {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 200px;
+  margin: 1em;
+}
+
 body {
   margin: 0;
   padding: 0;

@@ -14,9 +14,9 @@ export default function InputForm({ toggleShowForm, collection }) {
     setIsValid(true);
     setFormError(null);
 
-    const regexPattern = new RegExp(collection.regexPattern);
+    const regexPattern = collection?.regexPatter ? new RegExp(collection.regexPattern) : false;
 
-    if (name.match(regexPattern)) {
+    if (!regexPattern || name.match(regexPattern)) {
       console.log(name);
       const doc = { rule: name };
 
