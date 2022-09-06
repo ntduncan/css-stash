@@ -44,7 +44,6 @@ export default function InputForm({ toggleShowForm, collection }) {
 
   return (
     <div className="input-form">
-      <h3>Create {collection.collectionName}</h3>
       <form onSubmit={handleSubmit}>
         <div className="sample-box">{collection && collection.box(name)}</div>
         {!isValid && !formError && (

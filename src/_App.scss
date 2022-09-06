@@ -2,9 +2,14 @@
 
 .App {
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  padding: 1em;
-  height: 90vh;
+  grid-template-rows:80px auto 80px;
+  height: 100vh;
+  & > main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 250px auto 60px;
+    padding: 1em;
+  }
 }
 
 .collection-selector {

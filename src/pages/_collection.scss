@@ -1,14 +1,14 @@
 @import "../sass/variables";
 
 .collection-grid {
-    display: grid;
-    grid-template-columns: auto 1fr;
+    width: 100%;
     & > .collection {
         & > .bottom {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: start;
+            align-items: start;
             width: fit-content;
             padding: 0;
         }
